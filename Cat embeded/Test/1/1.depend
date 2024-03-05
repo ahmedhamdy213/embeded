@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1709633820 source:e:\programming\cat embeded\test\1\stack.c
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	"Stack.h"
+
+1709633847 e:\programming\cat embeded\test\1\stack.h
+	"Global.h"
+
+1709633845 e:\programming\cat embeded\test\1\global.h
+

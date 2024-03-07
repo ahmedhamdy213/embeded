@@ -1,0 +1,42 @@
+#include "../Global.h"
+
+#define LINKED_STACK
+
+
+
+#ifdef LINKED_STACK
+
+
+
+typedef struct stacknode{
+	StackEntry entry;
+	struct stacknode *next;
+}StackNode;
+
+typedef struct stack{
+	StackNode *top;
+}Stack;
+
+#else
+
+
+
+typedef struct stack{
+	int top;
+	StackEntry entry[MAXSTACK];
+} Stack;
+
+#endif
+
+
+
+void	TestImplementation();
+void	Push			(StackEntry, Stack *);
+void	Pop				(StackEntry *, Stack *);
+int		StackEmpty		(Stack *);
+int		StackFull		(Stack *);
+void	CreateStack		(Stack *);
+void	StackTop		(StackEntry *, Stack *);
+int		StackSize		(Stack *);
+void	ClearStack		(Stack *);
+void	TraverseStack	(Stack *, void (*)(StackEntry));

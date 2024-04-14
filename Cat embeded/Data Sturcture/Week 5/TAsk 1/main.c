@@ -21,7 +21,8 @@ Push(&z,&S);
 Appened(e,&q);
 printf("\n%d\n",StackSize(&S));
 printf("%d\n",QueueSize(&q));
-Pop(&z,&S );
+int _;
+Pop(&_,&S );
 printf("%d",z);
 
 
